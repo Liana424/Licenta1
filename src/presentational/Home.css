@@ -1,0 +1,272 @@
+#hero {
+    width: 100%;
+    height: 80vh;
+    background: url("C:\Users\Timar Liana\OneDrive\Desktop\imaginiL\B.jpg") top center;
+    background-size: cover;
+    position: relative;
+}
+#hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#hero .container {
+    padding-top: 72px;
+}
+@media (max-width: 992px) {
+    #hero .container {
+        padding-top: 62px;
+    }
+}
+#hero h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+#hero h2 {
+    color: #eee;
+    margin: 10px 0 0 0;
+    font-size: 24px;
+}
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+@media (max-width: 768px) {
+    #hero {
+        height: 100vh;
+    }
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+
+
+
+
+
+.dropdown ul {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 4px;
+}
+.dropdown ul li {
+    min-width: 200px;
+}
+.dropdown ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 500;
+}
+.dropdown ul a i {
+    font-size: 12px;
+}
+.dropdown ul a:hover, .dropdown ul .active:hover, .dropdown ul li:hover > a {
+    color: #5fcf80;
+}
+.dropdown:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+.dropdown .dropdown ul {
+    top: 0;
+    right: calc(100% - 30px);
+    visibility: hidden;
+}
+.dropdown .dropdown:hover > ul {
+    opacity: 1;
+    top: 0;
+    right: 100%;
+    visibility: visible;
+}
+@media (max-width: 1366px) {
+     .dropdown .dropdown ul {
+        right: -90%;
+    }
+     .dropdown .dropdown:hover > ul {
+        right: -100%;
+    }
+}
+
+
+
+
+
+
+/* sectiune */
+
+.courses .course-item {
+    border-radius: 5px;
+    border: 1px solid #eef0ef;
+}
+.courses .course-content {
+    padding: 15px;
+}
+.courses .course-content h3 {
+    font-weight: 700;
+    font-size: 20px;
+}
+.courses .course-content h3 a {
+    color: #37423b;
+    transition: 0.3s;
+}
+.courses .course-content h3 a:hover {
+    color: darkslateblue;
+}
+.courses .course-content p {
+    font-size: 14px;
+    color: #777777;
+}
+.courses .course-content h4 {
+    font-size: 14px;
+    background: #5fcf80;
+    padding: 7px 14px;
+    color: #fff;
+    margin: 0;
+}
+.courses .course-content .price {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    color: #37423b;
+}
+.courses .trainer {
+    padding-top: 15px;
+    border-top: 1px solid #eef0ef;
+}
+.courses .trainer .country img {
+    max-width: 50px;
+    border-radius: 50px;
+}
+.courses .trainer .country span {
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #5a6c60;
+}
+.courses .trainer .trainer-rank {
+    font-size: 18px;
+    color: #657a6d;
+}
+
+  /* calendar*/
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.dropdown-menu {
+  position: static;
+  display: block;
+  width: auto;
+  margin: 4rem auto;
+}
+
+.dropdown-menu-macos {
+  display: grid;
+  gap: .25rem;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+.dropdown-menu-macos .dropdown-item {
+  border-radius: .25rem;
+}
+
+.dropdown-item-danger {
+  color: var(--bs-red);
+}
+.dropdown-item-danger:hover,
+.dropdown-item-danger:focus {
+  color: #fff;
+  background-color: var(--bs-red);
+}
+.dropdown-item-danger.active {
+  background-color: var(--bs-red);
+}
+
+.btn-hover-light {
+  text-align: left;
+  background-color: var(--bs-white);
+  border-radius: .25rem;
+}
+.btn-hover-light:hover,
+.btn-hover-light:focus {
+  color: var(--bs-blue);
+  background-color: var(--bs-light);
+}
+
+.cal-month,
+.cal-days,
+.cal-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+}
+.cal-month-name {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  text-align: center;
+}
+.cal-weekday,
+.cal-btn {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 0;
+}
+.cal-btn:not([disabled]) {
+  font-weight: 500;
+}
+.cal-btn:hover,
+.cal-btn:focus {
+  background-color: rgba(0, 0, 0, .05);
+}
+.cal-btn[disabled] {
+  opacity: .5;
+}
+
+.form-control-dark {
+  background-color: rgba(255, 255, 255, .05);
+  border-color: rgba(255, 255, 255, .15);
+}
+
+.container {
+    padding: 10px 0 2px 0;
+}
